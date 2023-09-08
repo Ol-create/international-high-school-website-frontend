@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from 'react-router-dom'
 
 export default function NavBar() {
   const [isOpen, setOpen] = useState(false);
@@ -56,7 +57,17 @@ export default function NavBar() {
             <li>New Families</li>
           </ul>
         </div>
-      )}
+          )}
+          <div>
+              <Link to='/about-us'>ABOUT US</Link>
+              <Link to='/admissions'>ADMISSIONS</Link>
+              <Link to='/academics'>ACADEMICS</Link>
+              <Link to='/activities'>ACTIVITIES, ATHLETES, ART</Link>
+              <Link to='/student-life'>STUDENT LIFE</Link>
+              <Link to='/community'>COMMUNITY</Link>
+              <Link to='/donation'>GIVE TO SAS</Link>
+              <Link to='vancancy'>WORK AT SAS</Link>
+          </div>
     </div>
   );
 }
